@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form method="POST" action="procesar.php">
+
+        <div>
+            <label for="">Nombre</label>
+            <input type="text" name="name" />
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">Apellido</label>
+            <input type="text" name="apellido" />
+        </div>
+
+        <br>
+
+        <div>
+            <label> Email </label>
+            <input type="text" name="email" />
+        </div>
+
+        <br>
+
+        <div>
+            <label>Contraseña</label>
+            <input type="password" name="pass" />
+        </div>
+
+        <br>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="genero" value="m" id="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" name="genero" value="f" id="femenino">
+            <label for="femenino">Femenino</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" name="hobbies" values="Lectura" id="lectura">
+            <!-- El atributo for (lectura) de la label debe estar asociado al atributo id (lectura) del input -->
+            <label for="lectura">Lectura</label>
+
+            <input type="checkbox" name="hobbies" values="Deportes" id="deportes">
+            <label for="deportes">Deportes</label>
+
+            <input type="checkbox" name="hobbies" value="Turismo" id="turismo">
+            <label for="turismo">Turismo</label>
+        </fieldset>
+        <br>
+        <div>
+            <label>Nacionalidad</label>
+            <select name="nacionality">
+                <option value="" disabled selected>Seleccionar nacionalidad</option>
+                <option value="arg">Argentina</option>
+                <option value="bra">Brasil</option>
+                <option value="uru">Uruguay</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label>¿Que redes sociales utiliza?</label>
+            <select name="nacionality" multiple>
+                <option value="arg">Facebook</option>
+                <option value="bra">Twitter</option>
+                <option value="uru">Instagram</option>
+                <option value="uru">Tik Tok</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="soccerteam">¿De que cuadro sos?</label>
+            <input list=listteams name="soccerteam" id="soccerteam">
+            <datalist id="listteams">
+                <option value="River Plate">
+                <option value="Boca Juniors">
+                <option value="Racing Club">
+                <option value="Independiente">
+                <option value="San Lorenzo">
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label>Mensaje</label>
+            <textarea name="message"></textarea>
+        </div>
+        <br>
+
+        <input type="reset" value="Limpiar">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+</body>
+
+
+</html>
